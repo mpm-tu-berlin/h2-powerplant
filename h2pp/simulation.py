@@ -172,10 +172,12 @@ def run_simulation(sim_config_dict, jahreszeit: Jahreszeit, p_el: float = None, 
     # Unterschied machen, solange der Verdichterdurchsatz (kg/h) korrekt gewählt ist
 
     # Prüfen, ob Angleichung des Tankniveaus zwischen Simulationsstart und -endzeitpunkt gewünscht ist
-    if "balance_storage_level" not in sim_config_dict["tank"]:
-        raise ValueError("Please specify 'balance_storage_level' (true/false) in the JSON!")
+    balance_storage_level = False
+    if "tank" in sim_config_dict:
+        if "balance_storage_level" not in sim_config_dict["tank"]:
+            raise ValueError("Please specify 'balance_storage_level' (true/false) in the JSON!")
 
-    balance_storage_level = sim_config_dict["tank"]["balance_storage_level"]
+        balance_storage_level = sim_config_dict["tank"]["balance_storage_level"]
 
 
     # Modellierung von Wasserstofftank und Verdichtung bis 350 bar - allerdings davon abhängig, ob Vorverdichtet werden soll oder nicht
