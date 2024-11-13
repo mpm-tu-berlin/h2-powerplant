@@ -15,11 +15,29 @@ The tool is designed to be flexible so that it can be adapted to different use c
 ## Setup (Tool)
 
 
-1. After cloning the repo locally, make sure to setup an environment with Poetry using the ```pyproject.toml```.
+1. Clone the repo locally
 
-2. Gather the BDEW data file (see below)
+2. Setup an environment for the project by installing the packages listed in ```pyproject.toml```:
+   - The recommended and most easiest way here is using the poetry package manager. For installing poetry, refer to [this link](https://python-poetry.org/docs/#installing-with-the-official-installer).
+   - The suggested Python version is 3.11.*. Python 3.10 also seems to work fine (e.g. if you are using an Ubuntu 22.04 LTS based OS, this Python version comes preinstalled). Python 3.12 should also work. Other versions are not tested yet and therefore not officially supported for now.
 
-3. Additionally, you will need the following external tools on your system to run the program:
+#### macOS/Linux
+```
+poetry env use 3.11
+poetry install
+```
+#### Windows
+
+ If you are using Windows, you have to provide the full path to the desired Python executable, e.g.:
+```
+ poetry env use C:\Users\user\AppData\Local\Programs\Python\Python311\python.exe
+ poetry install
+ ```
+
+
+3. Gather the BDEW data file (see below)
+
+4. Additionally, you will need the following external tools on your system to run the program:
 - Solver (see instructions below)
 - Graphviz (only for plotting the energy system graph &rarr; see ```ESGraphRenderer``` usages in code), can be downloaded from https://graphviz.org/download/
 
@@ -27,8 +45,10 @@ The tool is designed to be flexible so that it can be adapted to different use c
 For now, due to open copyright questions, the BDEW load profile data file is not included in this repository
 and must be manually downloaded and inserted into the code directory.
 You can either
-- manually download the file ```Profile.zip```from the BDEW website (https://www.bdew.de/energie/energieverbraeuche/stromverbrauch-und-erzeugung/lastprofile-strom/), extract the file ```Repräsentative Profile VDEW.xls```, rename it to ```repraesentative_profile_vdew.xls``` and insert it into the ```h2pp/bdew_data``` directory or
-- run the script ```download_bdew.py``` in the project root that automatically downloads the data and inserts it into the right folder ```h2pp/bdew_data``` directory with the right name, also including checking the hash of the downloaded file. Anyways, use the script at your own risk.
+- Manually download the file ```Profile.zip```from the BDEW website (https://www.bdew.de/energie/energieverbraeuche/stromverbrauch-und-erzeugung/lastprofile-strom/), extract the file ```Repräsentative Profile VDEW.xls```, rename it to ```repraesentative_profile_vdew.xls``` and insert it into the ```h2pp/bdew_data``` directory or
+
+
+- (Recommended) Run the script ```download_bdew.py``` in the project root that automatically downloads the data and inserts it into the right folder ```h2pp/bdew_data``` directory with the right name, also including checking the hash of the downloaded file. Anyways, use the script at your own risk.
 
 
 ### Setting up the Solver
@@ -47,6 +67,10 @@ You can copy the cbc.exe from the bin directory to e.g. ```C:\Users\<Your Userna
 1. Install Homebrew
 2. Run ```brew install cbc``` in a terminal window
 
+#### Linux/Ubuntu
+Run ```sudo apt-get install  coinor-cbc coinor-libcbc-dev```
+
+For other Linux distributions and/or more information, see https://github.com/coin-or/Cbc.
 
 ## Ausführung des Programms
 

@@ -22,6 +22,7 @@ generator_autobahn_pv = [gen for gen in config_dict['generators'] if gen['name']
 consumer_bdew = [consumer for consumer in config_dict['consumers'] if consumer['name'] == "BDEW Consumption EUREF DUS"][0]
 
 for gen_key in ["BDEW_DUS", "FLOATING", "AUTOBAHN"]:
+    print("Pre-calculating CSV for", gen_key, "...")
     if gen_key == "FLOATING":
         generator = generator_floating_pv
     elif gen_key == "AUTOBAHN":
@@ -143,7 +144,6 @@ for gen_key in ["BDEW_DUS", "FLOATING", "AUTOBAHN"]:
 
         config_dict['consumers'].append(gen_neu)
 
-    print("J")
 
 # Save the new config_dict to a new file
 new_file_path = os.path.join(datapath, "__output_precalculated_pv_and_bdew_config_euref_dus.json")
