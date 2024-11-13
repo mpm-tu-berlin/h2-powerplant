@@ -1,0 +1,17 @@
+{
+  "heat_price_per_kWh": 0.16,
+  "sim_start_of_week": 2,
+  "spannungsebene": "MS",
+  "ort": "DTM",
+  "abzugbetrag_strom_in_ct": 0.184,
+  "kat_konzession": "TK",
+  "strompreis_csv": "Spotmarktpreis DEU 2023-09 bis 2024-08.csv",
+  "HRS_Compressor": {
+    "throughput_kg_per_hour": 56,
+    "hp_tank_capacity_kg": 56,
+    "work_30_to_950_bar_in_kWh_per_kg": 8.0,
+    "work_30_to_50_bar_in_kWh_per_kg": 0.7,
+    "work_50_to_30_bar_in_kWh_per_kg": 0.3,
+    "work_350_to_700_bar_in_kWh_per_kg": 2.0
+  }
+}

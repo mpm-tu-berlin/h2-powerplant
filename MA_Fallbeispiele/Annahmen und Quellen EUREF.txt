@@ -1,0 +1,20 @@
+Berlin:
+* https://euref.de/euref-campus/ sagt "2387 Megawattstunden
+Strom erzeugt das BHKW in der EUREF-Energiewerkstatt"
+
+
+* https://industrieanzeiger.industrie.de/themen/energieeffizienz/euref-campus-als-reallabor-fuer-die-energiewende/:
+** "Das Biogas-Kraftwerk kann nur einen Teil der benötigten elektrischen Energie erzeugen. "
+** "Die Gesamtproduktion elektrischer Energie auf dem Campus von 2600 MWh im Jahr kann daher den Verbrauch von 4000 MWh nicht decken. Der Rest wird als Grünverträge aus dem Netz bezogen."
+** "Lademöglichkeiten für Elektroautos: rund 150"
+
+* https://www.industr.com/de/dezentrales-energiekonzept-auf-dem-euref-campus-in-berlin-2370546
+** "Herzstück der Schöneberger Anlage ist ein Biomethan-Blockheizkraftwerk (BHKW) mit einer Leistung von 400 kW elektrisch."
+** "Mit einer thermischen Leistung von 431 kW produziert das BHKW mehr als die Hälfte der Wärme, die in das 2,5 km lange Verteilnetz des Quartiers fließt."
+** "Um das BHKW das ganze Jahr hindurch möglichst effizient zu nutzen, ermöglicht sein modulierender Betrieb eine stufenlose Regulierung von 50 Prozent bis zur Maximalleistung.
+Zwei Gas-Niedertemperaturkessel lassen sich bei Bedarf zuschalten. Sie steuern 40 Prozent der Wärme bei. "
+** "Ein weiteres, kleines BHKW mit 50 kW elektrischer Leistung liefert zusätzlich Wärme bei Bedarf, jährlich rund acht Prozent"
+
+
+Düsseldorf:
+* https://duesseldorf.euref.de/energiekonzept/ "Gebäude-Energiebedarf von jährlich 2,4 Gigawattstunde für Wärme und 2,7 Gigawattstunden zur Klimatisierung."

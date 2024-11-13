@@ -1,0 +1,80 @@
+{
+  "base_sim_interval": 15,
+  "inverter_efficiency": 0.95,
+  "h2_price_per_kg_350bar": 12.85,
+  "h2_price_per_kg_700bar": 13.85,
+  "heat_price_per_kWh": 0.16,
+  "sim_start_of_week": 2,
+  "spannungsebene": "MS",
+  "ort": "DTM",
+  "abzugbetrag_strom_in_ct": 0.184,
+  "kat_konzession": "TK",
+  "strompreis_csv": "../Common_Data/Spotmarktpreis DEU 2023-09 bis 2024-08.csv",
+  "HRS_Compressor": {
+    "throughput_kg_per_hour": 56,
+    "hp_tank_capacity_kg": 56,
+    "work_30_to_950_bar_in_kWh_per_kg": 8.0,
+    "work_30_to_50_bar_in_kWh_per_kg": 0.7,
+    "work_50_to_30_bar_in_kWh_per_kg": 0.3,
+    "work_350_to_700_bar_in_kWh_per_kg": 2.0
+  },
+
+  "electrolyzer": {
+    "fixed_p": 228,
+    "efficiency": 0.625
+  },
+  "fuelcell": {
+    "fixed_p": 76.5,
+    "efficiency_electric": 0.5,
+    "efficiency_thermal": 0.3
+  },
+  "tank": {
+    "fixed_capacity": 520,
+    "compress_before_storing": false,
+    "density_prop_factor_h2_50bar_to_30bar": 1.32,
+    "balance_storage_level": true
+  },
+
+  "battery": {
+    "fixed_capacity": 17316,
+    "soc_min": 0.1,
+    "soc_max": 0.9
+  },
+
+  "generators": [
+
+     {
+      "name": "generator_ipark",
+      "energy_type": "electricity_dc",
+      "calculation_type": "time_series",
+      "parameters": {
+        "contains": "whole_year",
+        "file_path": "daten_aufbereitet/pv_microgrid.csv"
+      }
+    }
+  ],
+
+  "consumers": [
+
+    {
+      "name": "consumer_ipark",
+      "energy_type": "electricity_ac",
+      "calculation_type": "time_series",
+      "parameters": {
+        "contains": "whole_year",
+        "file_path": "daten_aufbereitet/verbraeuche_microgrid_rekonstruiert.csv"
+      }
+    },
+
+    {
+      "name": "timeseries_fcev",
+      "energy_type": "hydrogen",
+      "calculation_type": "time_series",
+      "pressure": 700,
+      "parameters": {
+        "contains": "one_day",
+        "file_path": "../Common_Data/fcev_dummy_time_series.csv"
+      }
+    }
+  ]
+}

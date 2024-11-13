@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "h2-powerplant"
+version = "0.1.0"
+description = "Powerplant Auslegungstool"
+authors = ["Jonas Christiansen <j.christiansen@tu-berlin.de>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+termcolor = "^2.3.0"
+nbformat = "^5.9.2"
+matplotlib = "^3.8.2"
+nbconvert = "^7.11.0"
+pandas = "^2.1.3"
+pvlib = "^0.10.2"
+oemof = { git = "https://github.com/mpm-tu-berlin/oemof", branch = "master" } # Own fork to increase macOS/Linux support TODO replace with "^1.0" after the "only_maintained_software" branch got integrated into the oemof main branch (https://github.com/oemof/oemof/issues/119)
+oemof-solph = "^0.5.1"
+graphviz = "^0.20.1"
+xlrd = ">=2.0.1"
+flask = "^3.0.2"
+pyomo = "^6.7.2"
+pymoo = "^0.6.1.1"
+optuna = "^3.6.1"
+openpyxl = "^3.1.4"
+dash = {extras = ["diskcache"], version = "^2.17.1"}
+rainflow = "^3.2.0"
+numpy = "<2.0.0"
+timezonefinder = "^6.5.2"
+geopy = "^2.4.1"
+scipy = "^1.14.1"
+kaleido = "0.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

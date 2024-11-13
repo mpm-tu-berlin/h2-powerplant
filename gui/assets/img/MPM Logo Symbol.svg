@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="97.84341" height="64.25311" viewBox="0 0 97.84341 64.25311">
+  <defs>
+    <linearGradient id="Unbenannter_Verlauf_26" data-name="Unbenannter Verlauf 26" x1="36.69785" y1="8.0273" x2="97.84341" y2="8.0273" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.31528" stop-color="#80f2ff"/>
+      <stop offset="0.35208" stop-color="#6cebff"/>
+      <stop offset="0.50367" stop-color="#1fd2ff"/>
+      <stop offset="0.57344" stop-color="#00c8ff"/>
+      <stop offset="1" stop-color="#0066eb"/>
+    </linearGradient>
+  </defs>
+  <g id="Ebene_2" data-name="Ebene 2">
+    <g id="Ebene_1-2" data-name="Ebene 1">
+      <g>
+        <polygon points="73.396 40.155 52.407 53.936 46.415 57.873 36.698 64.253 26.981 57.873 0 40.155 12.224 32.127 36.698 16.056 52.407 26.373 61.172 32.127 73.396 40.155"/>
+        <polygon points="73.396 24.1 61.172 32.127 52.407 37.882 36.698 48.195 12.224 32.127 0 24.1 17.036 12.914 36.698 0.001 73.396 24.1" fill="#ff2a00"/>
+        <polygon points="85.62 16.055 85.62 10.168 36.698 10.168 36.698 5.886 85.62 5.886 85.62 0 97.843 8.027 85.62 16.055" fill="url(#Unbenannter_Verlauf_26)"/>
+      </g>
+    </g>
+  </g>
+</svg>
